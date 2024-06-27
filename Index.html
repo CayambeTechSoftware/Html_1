@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="hearts"></div>
+    <div class="letter">
+      <h1 style="text-align: center;">Carta de Amor</h1>
+      <p>Como si el viento adivinara<br>
+      de la nostalgia que me embarga<br>
+      Son tus recuerdos y están<br>
+      matando a mi corazón<br>
+      lo peor es que no puedo olvidar<br>
+      en la distancia te sigo esperando<br>
+      Y vuelve el llanto a caer<br>
+      abrazando esta soledad<br>
+      mi vida no tiene razón<br>
+      sin ti yo no sé a dónde voy<br>
+      Como si el viento adivinara<br>
+      de la nostalgia que me embarga<br>
+      Solo y frente a este mundo<br>
+      solo y con todos tus recuerdos<br>
+      no me resigno a perder tu amor<br>
+      es más, me niego a olvidarte<br>
+      sabes no quiero perderte<br>
+      te amo mil veces, te amo</p>
+    </div>
+  </div>
+  
+  <!-- Reproductor de audio oculto -->
+  <audio id="myAudio" autoplay loop style="display: none;">
+    <source src="https://www.youtube.com/embed/L7KBYCLO3io?start=64" type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio HTML5.
+  </audio>
+
+  <script>
+    // Función para reproducir el audio cuando la página se carga completamente
+    window.onload = function() {
+      var audio = document.getElementById('myAudio');
+      audio.play();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/4b/13/2b/4b132b17499c63221b129d5e9da2823d.jpg'); /* Fondo de la página */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para la carta */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de carta */
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    text-align: justify;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .letter {
+    padding: 50px;
+  }
+  
+  .letter p {
+    margin-bottom: 20px;
+  }
+  
+  .hearts {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    pointer-events: none;
+    background: url('heart.png') no-repeat center;
+    background-size: contain;
+    animation: heartsAnimation 10s infinite linear;
+    z-index: 0; /* Coloca los corazones detrás del contenido de la carta */
+  }
+  
+  @keyframes heartsAnimation {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+      transform: translate(-5px, -5px) rotate(180deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
